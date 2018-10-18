@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-functions-ssr",
+  "version": "1.0.0",
+  "description": "My dandy Nuxt.js project",
+  "author": "熊谷 典利",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "build-functions-ssr": "nuxt build && rimraf functions/dist && mkdirp functions/dist && cp -R .nuxt/dist functions/dist",
+    "serve": "firebase serve",
+    "deploy": "firebase deploy"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "mkdirp": "^0.5.1",
+    "nuxt": "^2.0.0",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
